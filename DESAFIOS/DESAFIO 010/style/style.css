@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/* 76E3AB 31DE84 26AB66 155E38 315E47 */
+
+:root {
+    --cor0: #76E3AB;
+    --cor1: #31DE84;
+    --cor2: #26AB66;
+    --cor3: #155E38;
+    --cor4: #315E47;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque: 'Work Sans', 'cursive';
+    --font-android: 'android', 'cursive';
+
+}
+::act
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+    background-color: #a29e5d92;
+    font-family: var(--font-padrao);
+
+}
+
+header {
+    color: var(--cor3);
+    font-family: var(--font-destaque);
+    padding: 15px;
+    height: 140px;
+    background-image: linear-gradient(to top, var(--cor3), var(--cor1));
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main p {
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    
+}
+
+main strong {
+    font-weight: bold;
+    color: rgba(21, 248, 172, 0.868);
+    background-color: #155e38;
+    padding: 2px 2px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+    color: white;
+    background-color: #155e38;
+    border-radius: 5px;
+    text-decoration-style: 'dashed';
+}
+
+a.externo::after {
+    content: '\00A0\1F517'; /*CODÍGO RETIRADO DO EMOJIPEDI*/
+}
+
+main a:hover {
+    background-color: #69c897;
+    color: white;
+}
+header > h1 {
+    color: white;
+    text-shadow: 4px 1px 16px black;
+    font-family: var(--font-destaque);
+    margin: 20px;
+    min-height: 0px;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+header > p {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    margin-top: 30px;
+ }
+
+nav {
+    background-color: #155e38;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.656);
+    padding: 10px;    
+    }
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    color: red;
+    background-color: #26AB66;
+}
+
+main {
+    padding: 20px;     
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.597);
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 30px; 
+}
+
+
+
+main h1 {
+    font-family: var(--font-android);
+    color: #26AB66;
+    text-shadow: 2px 2px 0px black;
+    text-indent: 5px;
+    font-size: 26px;
+}
+
+main h2 {
+    font-family: var(--font-android);
+    text-shadow: 2px 2px 0px #26AB66;
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.481) 55%, transparent);
+    text-indent: 5px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+
+background-color: rgb(1, 92, 1);
+margin: 0px -20px 30px -20px;
+padding: 20px;
+padding-bottom: 40%;
+position: relative;
+}
+
+div.video > iframe {
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+}
+
+aside {
+    background-color: #1f8751;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.567);
+}
+
+aside > h3 {
+    color: white;
+    background-color: #26AB66;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+aside ul {
+    list-style-type: '\2714\00A0\00A0' ;
+    list-style-position: inside;
+    columns: 2;
+    margin: 5px;
+    padding: 0px;
+
+
+  }
+
+
+
+
+footer > p {
+    background-color: rgb(5, 118, 33);
+    padding: 10px;
+    color: white;
+    font-size: 0.7em;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;  
+}
+
+footer a {
+    text-decoration: none;
+}
